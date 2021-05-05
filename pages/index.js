@@ -25,7 +25,7 @@ export default function Home() {
           </p>
           <Link href ="./linkDownloads">
               <a>
-                Liks
+                Links
                   <i>
                     <FontAwesomeIcon icon="arrow-right"/>
                   </i>

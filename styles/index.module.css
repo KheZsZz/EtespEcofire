@@ -13,7 +13,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    background-image: url(../public/img/logoBombeiroCivil.png);
+    background-image: url(../public/logoBombeiroCivil.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -36,8 +36,8 @@
     min-height: 70vh;
     justify-content: center;
     align-items: center;
-    background-image: url(../public/img/37.jpg);
-    background-position: 30%;
+    background-image: url(../public/37.jpg);
+    background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
 }

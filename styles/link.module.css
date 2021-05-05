@@ -32,17 +32,17 @@
 }
 .divcontent {
     display: grid;
-    grid-column-gap: 50px;
+    grid-column-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
     width: 80%;
-    height: 20vh;
+    height: auto;
     padding: 10px;
-    border: 1.2px solid #fff;
-    border-radius: 10px;
-    color:#fff;
-    background-color: rgba(0,0,0,0.2);
+    /* border: 1.2px solid #fff; */
+    /* border-radius: 10px; */
+    /* color:#fff; */
+    /* background-color: rgba(0,0,0,0.2); */
 }
 
 
@@ -51,18 +51,49 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
     height: auto;
     padding: 10px;
     border: 1.2px solid #fff;
     border-radius: 10px;
     color:#fff;
     background-color: rgba(0,0,0,0.2);
+    margin-top: 20px;
+    min-height: 300px;
 }
 .div a {
     width: 100%;
     text-align: center;
+    text-transform: uppercase;
 }
 .image {
-    
+    display: block;
+    width: 80%;
+    height: 250px;
+    border-radius: 20px;
+    margin: 10px;
+    transition: .5s;
+}
+.image:hover {
+   transform: scale(1.1);
+}
+.back {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+@media (max-width: 680px) {
+    .divcontent {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    .image {
+        display: block;
+        width: 60%;
+        height: 200px;
+    }
+    .div {
+        min-height: auto;
+    }
 }

@@ -7,6 +7,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {fas} from '@fortawesome/free-solid-svg-icons';
 import Title from '../Components/title'
 import LiksEstudos from '../Components/liks'
+import Link from 'next/link'
 
 library.add(fas);
 
@@ -20,26 +21,32 @@ export default function Links(){
 
                     <LiksEstudos
                         src = "https://www.youtube.com/watch?v=529Iggl1NZs&t=526s"
-                        imagesrc = "/img/logoBombeiroCivil.png"
+                        imagesrc = "/logoBombeiroCivil.png"
                         title = "Video aula 01"
                     />
 
                     <LiksEstudos
                         src = "https://www.youtube.com/watch?v=T6qHwBhWvl8"
-                        imagesrc = '/img/logosocorrista.png'
+                        imagesrc = '/logosocorrista.png'
                         title = "Video aula 02"
                     />
                     <LiksEstudos
                         src = "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/arquivos/crianca/Obstrucao_ViasAereas_CorpoEstranho.pdf"
-                        imagesrc = '/img/pdfprefeitura.png'
+                        imagesrc = '/pdfprefeitura.png'
                         title = "PDF Prefeitura"
                     />
                     <LiksEstudos
                         src = "https://pebmed.com.br/obstrucao-de-vias-aereas-por-corpo-estranho-ovace-em-adultos/"
-                        imagesrc = '/img/slider_1.jpg'
+                        imagesrc = '/slider_1.jpg'
                         title = "Site PEBMED"
                     />
                 </div>
+                <Link href ="/">
+                    <a className={Style.back}>
+                        <FontAwesomeIcon icon="arrow-alt-circle-left"/>
+                        Voltar
+                    </a>
+                </Link>
             </div>
 
             <Footer />
