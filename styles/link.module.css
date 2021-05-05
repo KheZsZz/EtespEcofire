@@ -31,6 +31,22 @@
     height: auto;
 }
 .divcontent {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 20vh;
+    padding: 10px;
+    border: 1.2px solid #fff;
+    border-radius: 10px;
+    color:#fff;
+    background-color: rgba(0,0,0,0.2);
+}
+
+
+.div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,9 +54,15 @@
     width: 80%;
     height: auto;
     padding: 10px;
-    margin: 10px auto;
     border: 1.2px solid #fff;
     border-radius: 10px;
     color:#fff;
     background-color: rgba(0,0,0,0.2);
+}
+.div a {
+    width: 100%;
+    text-align: center;
+}
+.image {
+    
 }

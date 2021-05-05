@@ -6,7 +6,7 @@ import {library} from '@fortawesome/fontawesome-svg-core';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {fas} from '@fortawesome/free-solid-svg-icons';
 import Title from '../Components/title'
-import Link from 'next/link'
+import LiksEstudos from '../Components/liks'
 
 library.add(fas);
 
@@ -17,57 +17,28 @@ export default function Links(){
             <Title/>
             <div className={StyleIndex.content}>
                 <div className={Style.divcontent}>
-                    <h2>Modulos</h2>
-                    <ul className={Style.content}>
-                        <a className={Style.linkdownload} href="../public/arquivos/Legislação/aula01/Legislação.ppt" download>
-                            Primeiros Socorros
-                            <i>
-                                <FontAwesomeIcon icon="arrow-circle-right"/>
-                            </i>
-                        </a>
-                        <a className={Style.linkdownload} href="../public/arquivos/Legislação/aula01/Legislação.ppt" download>
-                            Preveção e combate a incêndio
-                            <i>
-                                <FontAwesomeIcon icon="arrow-circle-right"/>
-                            </i>
-                        </a>
-                        <a className={Style.linkdownload} href="../public/arquivos/Legislação/aula01/Legislação.ppt" download>
-                            Produtos Perigosos
-                            <i>
-                                <FontAwesomeIcon icon="arrow-circle-right"/>
-                            </i>
-                        </a>
-                        <a className={Style.linkdownload} href="../public/arquivos/Legislação/aula01/Legislação.ppt" download>
-                            Libras
-                            <i>
-                                <FontAwesomeIcon icon="arrow-circle-right"/>
-                            </i>
-                        </a>
-                        <a className={Style.linkdownload} href="../public/arquivos/Legislação/aula01/Legislação.ppt" download>
-                            Trabalho em altura
-                            <i>
-                                <FontAwesomeIcon icon="arrow-circle-right"/>
-                            </i>
-                        </a>
-                        <a className={Style.linkdownload} href="../public/arquivos/Legislação/aula01/Legislação.ppt" download>
-                            Espaço confinado
-                            <i>
-                                <FontAwesomeIcon icon="arrow-circle-right"/>
-                            </i>
-                        </a>
-                        <a className={Style.linkdownload} href="../public/arquivos/Legislação/aula01/Legislação.ppt" download>
-                            Cabos, voltas e nós / Comunicação
-                            <i>
-                                <FontAwesomeIcon icon="arrow-circle-right"/>
-                            </i>
-                        </a>
-                        <a className={Style.linkdownload} href="../public/arquivos/Legislação/aula01/Legislação.ppt" download>
-                            Legislação
-                            <i>
-                                <FontAwesomeIcon icon="arrow-circle-right"/>
-                            </i>
-                        </a>
-                    </ul>
+
+                    <LiksEstudos
+                        src = "https://www.youtube.com/watch?v=529Iggl1NZs&t=526s"
+                        imagesrc = "/img/logoBombeiroCivil.png"
+                        title = "Video aula 01"
+                    />
+
+                    <LiksEstudos
+                        src = "https://www.youtube.com/watch?v=T6qHwBhWvl8"
+                        imagesrc = '/img/logosocorrista.png'
+                        title = "Video aula 02"
+                    />
+                    <LiksEstudos
+                        src = "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/arquivos/crianca/Obstrucao_ViasAereas_CorpoEstranho.pdf"
+                        imagesrc = '/img/pdfprefeitura.png'
+                        title = "PDF Prefeitura"
+                    />
+                    <LiksEstudos
+                        src = "https://pebmed.com.br/obstrucao-de-vias-aereas-por-corpo-estranho-ovace-em-adultos/"
+                        imagesrc = '/img/slider_1.jpg'
+                        title = "Site PEBMED"
+                    />
                 </div>
             </div>
 

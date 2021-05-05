@@ -12,12 +12,8 @@ export default function footer(position){
             position = {position}
         }>
             <footer className={Style.container}>
-                <h3>
-                    Etesp Ecofire
-                </h3>
-
                 <div>
-                    <FontAwesomeIcon icon="copyright"/> copyright
+                    <FontAwesomeIcon icon="copyright"/> copyright <br/>by Kevin Oliveira
                 </div>
             </footer>
         </div>
